@@ -1,7 +1,7 @@
 Typus.setup do |config|
 
   # Application name.
-  # config.admin_title = "Typus"
+  config.admin_title = "hogehoge"
 
   # When mailer_sender is set, password recover is enabled. This email
   # address will be used in Admin::Mailer.
