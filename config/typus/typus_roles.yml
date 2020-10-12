@@ -2,3 +2,6 @@
 
 admin:
   AdminUser: all
+
+viewer:
+  AdminUser: read
