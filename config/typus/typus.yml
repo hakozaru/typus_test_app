@@ -3,13 +3,13 @@
 AdminUser:
   fields:
     default: first_name, last_name, role, email, locale
-    list: email, role, status
-    form: first_name, last_name, role, email, password, password_confirmation, locale, status
+    list: email, role, status # /admin/admin_users ページに表示されるカラムを設定している
+    form: first_name, last_name, role, email, password, password_confirmation, locale, status # /admin/admin_users/new ページに表示されるカラムを設定している
     options:
-      selectors: role, locale
+      selectors: role, locale # これを設定すると編集画面でroleとlocaleがセレクトボックスになる
       booleans:
-        status: Active, Inactive
-  filters: status, role
-  search: first_name, last_name, email, role
+        status: Active, Inactive # /admin/admin_users の一覧で、statusがtrueならactiveと言った感じでラベルを設定している
+  filters: status, role # 一覧での検索条件っぽい
+  search: first_name, last_name, email, role # どのカラムを検索対象にするかの設定
   application: Admin
   description: Users Administration
