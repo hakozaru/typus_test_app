@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Sample Resources</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sample_resources.each do |sample_resource| %>
+      <tr>
+        <td><%= link_to 'Show', sample_resource %></td>
+        <td><%= link_to 'Edit', edit_sample_resource_path(sample_resource) %></td>
+        <td><%= link_to 'Destroy', sample_resource, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sample resource', new_sample_resource_path %>
