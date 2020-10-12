@@ -1,0 +1,8 @@
+# Use the README file as a reference to customize settings.
+
+SampleResource:
+  fields:
+    default: password, hogehoge, email, ip, last_login_ip, login_count, login_at, date_column, integer_column, boolean_column, decimal_column
+    form: password, hogehoge, email, ip, last_login_ip, login_count, login_at, date_column, integer_column, boolean_column, decimal_column
+  relationships: 
+  application: Application
